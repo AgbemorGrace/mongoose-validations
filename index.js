@@ -18,7 +18,7 @@ const start =async () => {
     
 
 
-app.listen(4001,(error) => {
+app.listen(4001,(err) => {
     console.log("server is listening on port 4001")
 })
 }
