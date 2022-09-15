@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 
-app. all("/",(req, res) =>{
+app.all("/",(req, res) =>{
     res.status(200).send("Welcome to my server. use /posts to get all ")
 });
 app.use("/auth", authRouter);

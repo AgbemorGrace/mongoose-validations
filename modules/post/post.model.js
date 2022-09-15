@@ -13,6 +13,15 @@ const postSchema = new Schema({
         type: Boolean,
         default: false,
     },
+    author:{
+        type: Schema.Types.ObjectId,
+        required: true,
+    },
+    likedBy: [
+        {
+        type: Schema.Types.ObjectId,
+        ref: " User",
+    }],
 })
 
-module.exports =model("post", postSchema);
+module.exports =model("Post", postSchema);
